@@ -15,8 +15,8 @@
   
 ## Intro to Arguements  
 - Understood the concept of arguements(additional data passed to the command) through the example of the `echo` command which "echoes" all of its arguments back out onto the terminal
-- Used `hello hackers`, where `hello` is the command and "hackers" is the arguement to get the flag
-    Flag Obtained - **pwn.college{MoY9bcK3rIz-mPTLJ9z6wpXBp05.dhjNyUDL0YTN0czW}**
+- Used `hello hackers`, where `hello` is the command and "hackers" is the arguement to get the flag  
+  Flag Obtained - **pwn.college{MoY9bcK3rIz-mPTLJ9z6wpXBp05.dhjNyUDL0YTN0czW}**
   
     ![image](https://github.com/user-attachments/assets/2d4f1408-f858-4574-9d0a-e6c1f8abefaa)
 
