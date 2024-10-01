@@ -28,6 +28,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   ![image](https://github.com/user-attachments/assets/c0020f50-393b-4f71-80c6-f1c4b3100ecc)
   ![image](https://github.com/user-attachments/assets/9789a679-81e5-4976-85eb-b3cb65288793)
   Flag Obtained- **pwn.college{EXuxMbkxlJfINaUQvAE8_aRwDdW.ddDN1QDL0YTN0czW}**
+## Position yet elsewhere
 
   
 
