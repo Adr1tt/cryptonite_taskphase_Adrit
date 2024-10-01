@@ -15,7 +15,8 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   Flag Obtained- **pwn.college{AjBIcf8QMReH_phm7wKT7vO4eO_.dVDN1QDL0YTN0czW}**
   ![image](https://github.com/user-attachments/assets/002d2136-c741-43b3-ba6d-f8087b1c109f)
 ## Position thy self
-- 
+- Understood that we can navigate around directories by using the cd (change directory) command and passing a path to it as an argument.
+- Started the challenge and entered `cd /` in the terminal prompt as "hacker@paths~position-thy-self:~$" is mentioned in the prompt.
 
 
   
