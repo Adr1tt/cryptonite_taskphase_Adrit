@@ -56,7 +56,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   Flag Obtained- **pwn.college{w1YmjGiKnxOi6zuHPMWnOVDg2G_.dFTN1QDL0YTN0czW}**
 ## Home sweet Home
 - Understood the concept of home directory, where users usually store most of their personal files.
-- Understood that "~" is the current working directory and in this case "~" is shorthand for `/home/hacker`
+- Understood that "~" is the current working directory and in this case it is the shorthand for `/home/hacker`
 - Started the challenge and entered `/challenge/run ~/a` in the terminal prompt where `~/a` is the arguement(which is an absolute path, inside the home directory and has three characters). Thus obtaining the flag
   <img width="409" alt="image" src="https://github.com/user-attachments/assets/3310b8dd-5934-4e01-9e5d-aa2ecd8f7511">
   Flag Obtained- **pwn.college{oUK8pxFqquUkXyjEnwycekfx8Qr.dNzM4QDL0YTN0czW}**
