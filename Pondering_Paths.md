@@ -52,7 +52,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 ## Implicit relative path
 - Understood that Linux explicitly avoids automatically looking in the current directory when you provide a "naked" path.
 - Started the challenge and used `cd /challenge` to change the directory and then entered `./run` (because . refers to the current directory) to obtain the flag
-  ![image](https://github.com/user-attachments/assets/6766b954-486f-42fe-ac04-ff7e95a0ce23)
+  ![image](https://github.com/user-attachments/assets/6766b954-486f-42fe-ac04-ff7e95a0ce23)  
   Flag Obtained- **pwn.college{w1YmjGiKnxOi6zuHPMWnOVDg2G_.dFTN1QDL0YTN0czW}**
 ## Home sweet Home
 - Understood the concept of home directory, where users usually store most of their personal files.
