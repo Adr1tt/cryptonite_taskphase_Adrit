@@ -2,7 +2,7 @@
 Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to establish connection between the terminal and [pwn.college](https://pwn.college/)  
 
 ## The Root
-- Understood the concept of tree filesystem(starting at /) and directories
+- Understood the concept of tree filesystem(starting at /) and directories.
 - Started the challenge and entered `/pwn` in the terminal prompt to get the flag
   
   Flag Obtained- **pwn.college{oZPKIsYpmmn_gh0a3mq58cE2U_V.dhzN5QDL0YTN0czW}**
@@ -29,6 +29,43 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   ![image](https://github.com/user-attachments/assets/9789a679-81e5-4976-85eb-b3cb65288793)
   Flag Obtained- **pwn.college{EXuxMbkxlJfINaUQvAE8_aRwDdW.ddDN1QDL0YTN0czW}**
 ## Position yet elsewhere
+- Started the challenge and used `/challenge/run` to the following output is shown in the terminal-
+  <img width="448" alt="image" src="https://github.com/user-attachments/assets/18b79dbd-414a-4325-b7d2-7175909dce7b">
+
+
+- Entered `cd /etc/apt/sources.list.d` in the terminal prompt to change the directory and used `/challenge/run` to obtain the flag
+  <img width="529" alt="image" src="https://github.com/user-attachments/assets/0fc1c806-86dd-4524-bb20-72454b393f1e">
+  Flag Obtained- **pwn.college{Qp84riXpWI153BGSJOsIxGX0AgD.dhDN1QDL0YTN0czW}**
+## Implicit relative paths, from /
+- Understood the concept of relative paths and cwd(current working directory).
+- Started the challenge and used `/challenge/run` and the following output is shown in the terminal-
+  <img width="435" alt="image" src="https://github.com/user-attachments/assets/a615c08f-6d46-49df-b32e-3214589b20f1">
+
+- Entered `cd /` in the terminal prompt to change the directory and then entered `challenge/run` (as the hint in the challenge said the relative path starts with "c") to obtain the flag-
+  ![image](https://github.com/user-attachments/assets/bacff82b-4ab1-4a7c-b993-ee01cb3e024e)
+  Flag Obtained -**pwn.college{4rurRVvFc4IraTKqUMfgxCFq10S.dlDN1QDL0YTN0czW}**
+## Explicit relative paths, from /
+- Understood the use of "." in relative paths.
+- Started the challenge and used `cd /` to change the directory (to `/`) and then entered `./challenge/run` to obtain the flag
+  ![image](https://github.com/user-attachments/assets/32c4d024-b0d1-4c1c-bcba-3bdcba5c7412)
+  Flag Obtained- **pwn.college{MT65irIkTVSfsu7HPs0DUcvrpZ3.dBTN1QDL0YTN0czW}**
+## Implicit relative path
+- Understood that Linux explicitly avoids automatically looking in the current directory when you provide a "naked" path.
+- Started the challenge and used `cd /challenge` to change the directory and then entered `./run` (because . refers to the current directory) to obtain the flag
+  ![image](https://github.com/user-attachments/assets/6766b954-486f-42fe-ac04-ff7e95a0ce23)
+  Flag Obtained- **pwn.college{w1YmjGiKnxOi6zuHPMWnOVDg2G_.dFTN1QDL0YTN0czW}**
+## Home sweet Home
+- Understood the concept of home directory, where users usually store most of their personal files.
+- Understood that "~" is the current working directory and in this case "~" is shorthand for `/home/hacker`
+- Started the challenge and entered `/challenge/run ~/a` in the terminal prompt where `~/a` is the arguement(which is an absolute path, inside the home directory and has three characters). Thus obtaining the flag
+  <img width="409" alt="image" src="https://github.com/user-attachments/assets/3310b8dd-5934-4e01-9e5d-aa2ecd8f7511">
+  Flag Obtained- **pwn.college{oUK8pxFqquUkXyjEnwycekfx8Qr.dNzM4QDL0YTN0czW}**
+
+
+
+
+  
+
 
   
 
