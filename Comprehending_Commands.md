@@ -1,4 +1,5 @@
 # Comprehending Commands
+Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establish connection between the terminal and pwn.college
 ## cat: not the pet, but the command!
 - Learnt the `cat` command which is used for reading out files and it can concatenate multiple files if multiple arguments are provided.
 - Started the challenge and entered `cat flag` in the terminal prompt to read out the contents of the flag file, thus obtaining the flag
@@ -9,4 +10,10 @@
 - Started the challenge and entered `cat /flag` in the terminal prompt where /flag is the absolute path and thus obtained the flag
   <img width="404" alt="image" src="https://github.com/user-attachments/assets/75124c35-1366-41ea-b5b2-3929fef92760">  
   Flag Obtained- **pwn.college{A4xKFhxmb6Wig-brWszjleTNaQS.dlTM5QDL0YTN0czW}**
-
+## more catting practice
+- On starting the challenge the absolute path of the flag containing file was shown.
+- I used `cat /usr/lib/php/flag` to read out the contents of the flag file thus obtaining the flag
+  <img width="543" alt="image" src="https://github.com/user-attachments/assets/454a36ce-fa7d-4190-b987-27a1897ad779">  
+  Flag Obtained- **pwn.college{AUZ4xEJsVl6NlbVwYAxnfwri8Oa.dBjM5QDL0YTN0czW}**
+## 
+  
