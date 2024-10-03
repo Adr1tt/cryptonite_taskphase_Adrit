@@ -16,6 +16,10 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
   <img width="543" alt="image" src="https://github.com/user-attachments/assets/454a36ce-fa7d-4190-b987-27a1897ad779">  
   Flag Obtained- **pwn.college{AUZ4xEJsVl6NlbVwYAxnfwri8Oa.dBjM5QDL0YTN0czW}**
 ## grepping for a needle in a haystack
-- Learnt the `grep` command and that it can be used for searching a file for lines of text containing a specific sequence of characters(string)
-- Started the challenge and entered `grep pwn.college /challenge/data.txt` where "pwn.college" is the string 
+- Learnt the `grep` command and that it can be used for searching a file for lines of text containing a specific sequence of characters(string).
+- Started the challenge and entered `grep pwn.college /challenge/data.txt` where "pwn.college" is the arguement since flags start with "pwn.college" and this obtained the flag
+  <img width="639" alt="image" src="https://github.com/user-attachments/assets/4c85cfea-def5-4e69-a186-96d19dc97c49">  
+  Flag Obtained- **pwn.college{E6uCKutXNvpcn9OvxMpaRy-djks.ddTM4QDL0YTN0czW}**
+## 
+
   
