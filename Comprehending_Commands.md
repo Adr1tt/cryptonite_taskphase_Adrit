@@ -45,7 +45,35 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
   <img width="454" alt="image" src="https://github.com/user-attachments/assets/d3ef39e2-5926-4a35-bb03-93cc930959ff">  
   Flag Obtained- **pwn.college{gjV9KEtTZdCcRG-VsMA3XU_Df-D.dBTN4QDL0YTN0czW}**
 ## An Epic Filesystem Quest
-- 
+(This was a long one)
+- Started the challenge and as instructed I used `cd /` and then `ls` to list files in the "/" directory.
+- The following showed up in the terminal-
+  <img width="418" alt="image" src="https://github.com/user-attachments/assets/985dbda4-155a-4cd0-89fa-aa24778eaeef">  
+- So I used `cat INFO` to read out the contents of the file "INFO" and the following showed up in the terminal-
+  <img width="1007" alt="image" src="https://github.com/user-attachments/assets/83b60382-ce19-4992-bdc8-3b4a588c96e7">  
+- So then I entered `ls /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1` in the terminal and 2 files were showed and one of them was "README-TRAPPED" so then, I used `cat /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1/README-TRAPPED` to reveal it's contents and this showed up-
+  <img width="1020" alt="image" src="https://github.com/user-attachments/assets/323ef400-9f49-48df-b2ed-5566e70b3f36">  
+- Then I used `ls /usr/share/autoconf/autotest -a` to reveal the hidden files and a file named ".TIP" came up. Then, I used `cat /usr/share/autoconf/autotest/.TIP` which revealed the next clue
+  <img width="578" alt="image" src="https://github.com/user-attachments/assets/b9336c31-e644-4355-9da0-b03b4aae8fb0">  
+- Thus, I then entered `ls /opt/linux/linux-5.4/arch/parisc/kernel` in the terminal and many files came up, out of which I used the `cat` command on two files, first was a file named "Makefile" which revealed contents of no use and then I used the `cat` command on a file named "TRACE" which revealed the next clue-
+  <img width="1873" alt="image" src="https://github.com/user-attachments/assets/88e65449-b596-4657-87a7-ca0f75e09a05">  
+- Then I used `ls /usr/local/lib/python3.8/dist-packages/sympy/strategies/branch/tests` which revealed files and one of them was named "EVIDENCE", so I used `cat /usr/local/lib/python3.8/dist-packages/sympy/strategies/branch/tests/EVIDENCE` to reveal its contents and found the next clue
+  <img width="886" alt="image" src="https://github.com/user-attachments/assets/8c0d955c-ba87-4b87-b634-27124bd99da0">  
+- Therefore, I used `cd /opt/linux/linux-5.4/drivers/staging/uwb` and then used the `ls` command to list it's files and alot of files showed up and one of them was named "BLUEPRINT" and I used `cd BLUEPRINT` to output it's contents and found the next clue-
+  <img width="1234" alt="image" src="https://github.com/user-attachments/assets/78360633-5a9b-49d6-8fa4-1c576fec96a6">  
+- Now, I used `ls /opt/linux/linux-5.4/arch/nios2/include/uapi -a` and a file named ".MESSAGE" showed up on which I used the `cat` command to find the next clue-
+  <img width="1010" alt="image" src="https://github.com/user-attachments/assets/0cf8e650-fb20-42c9-a722-f0822c5be01c">  
+- Now, I used `ls /opt/pt-dump/.git/logs/refs` which revealed multiple files out of which there was a file named "INSIGHT-TRAPPED". Thus I used `cat /opt/pt-dump/.git/logs/refs/INSIGHT-TRAPPED` and found the next clue-
+
+
+  
+
+
+
+  
+
+
+
 
 
 
