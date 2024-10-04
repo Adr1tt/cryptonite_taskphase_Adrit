@@ -64,6 +64,12 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
 - Now, I used `ls /opt/linux/linux-5.4/arch/nios2/include/uapi -a` and a file named ".MESSAGE" showed up on which I used the `cat` command to find the next clue-
   <img width="1010" alt="image" src="https://github.com/user-attachments/assets/0cf8e650-fb20-42c9-a722-f0822c5be01c">  
 - Now, I used `ls /opt/pt-dump/.git/logs/refs` which revealed multiple files out of which there was a file named "INSIGHT-TRAPPED". Thus I used `cat /opt/pt-dump/.git/logs/refs/INSIGHT-TRAPPED` and found the next clue-
+  <img width="917" alt="image" src="https://github.com/user-attachments/assets/c2050239-92c8-4ee2-9e5f-aaef8825d5bd">  
+- Thus, I used `cd /usr/lib/python3/dist-packages/jedi/third_party/typeshed/third_party/2/six/moves` to change directories and then used `ls` which revealed alot of files and one of them was named "SECRET".
+- Now, I used `cat SECRET` which finally revealed the flag
+  <img width="1457" alt="image" src="https://github.com/user-attachments/assets/64a94bf8-576f-4a93-b9f0-028bd1b1cf6b">  
+  Flag Obtained- **pwn.college{MuGAFzBaaTP64T4s2CKhAVMLwzK.dljM4QDL0YTN0czW}**
+
 
 
   
