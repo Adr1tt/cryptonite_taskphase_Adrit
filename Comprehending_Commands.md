@@ -36,7 +36,7 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
 - Learnt the `rm` command which is used to remove files.
 - Started the challenge and entered `ls` which showed 2 files and one of them is "delete_me".
 - Then I entered `rm delete_me` to remove that file and then entered `/challenge/run` to obtain the flag.  
-  <img width="405" alt="image" src="https://github.com/user-attachments/assets/faa584fc-5bdf-4ddb-abfa-b5f4401fdf00">
+  <img width="405" alt="image" src="https://github.com/user-attachments/assets/faa584fc-5bdf-4ddb-abfa-b5f4401fdf00">  
   Flag Obtained- **pwn.college{EkpSn33bcYZAh4Epam6uwCWpm1Y.dZTOwUDL0YTN0czW}**
 ## hidden files
 - Understood that Linux has a convention where files that start with a . don't show up by default in `ls` and we need to use `ls -a` to view them.
