@@ -69,6 +69,13 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
 - Now, I used `cat SECRET` which finally revealed the flag
   <img width="1457" alt="image" src="https://github.com/user-attachments/assets/64a94bf8-576f-4a93-b9f0-028bd1b1cf6b">  
   Flag Obtained- **pwn.college{MuGAFzBaaTP64T4s2CKhAVMLwzK.dljM4QDL0YTN0czW}**
+## making directories
+- Understood the `mkdir` command.
+- Started the challenge and used `cd /tmp` to change directories and then entered `mkdir pwn` to make a new directory called "pwn" and then used `cd pwn` to change directories again.
+- Then, I used `touch college` to create a new file called "college" and then used `/challenge/run` to obtain the flag-  
+  <img width="421" alt="image" src="https://github.com/user-attachments/assets/2ae39fa5-3c2b-4623-99a8-e4f2d77d0abd">
+
+  
 
 
 
