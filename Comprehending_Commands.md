@@ -74,8 +74,20 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
 - Started the challenge and used `cd /tmp` to change directories and then entered `mkdir pwn` to make a new directory called "pwn" and then used `cd pwn` to change directories again.
 - Then, I used `touch college` to create a new file called "college" and then used `/challenge/run` to obtain the flag-  
   <img width="421" alt="image" src="https://github.com/user-attachments/assets/2ae39fa5-3c2b-4623-99a8-e4f2d77d0abd">
+## finding files
+- Understood the `find` command which helps in searching for files and can take arguements which specify the search criteria or location.
+- Started the challenge and used `find / -name flag` to search for all files named "flag" and the following output came up-  
+  <img width="785" alt="image" src="https://github.com/user-attachments/assets/78876e94-5b15-4155-a0de-70e07b422ab4">  
+- Then I tried using the `cat` command to read the files named "flag" one by one and found the flag on the fourth try  
+  ![image](https://github.com/user-attachments/assets/50165249-a122-4930-807b-27407d717691)  
+  Flag Obtained- **pwn.college{k6oT2sD3qBzMyDGnvoTL4PKhuoo.dJzM4QDL0YTN0czW}**
+## linking files
+- Understood the concept of a hard link and a soft link(symlink or symbolic link).
+- Learnt the `ls` command and use of `ls -s`. Also I learnt about the `file` command which tells the type of a file.
+- Started the challenge and entered `ln -s /flag /home/hacker/not-the-flag` in the terminal to create a symlink and then used `/challenge/catflag` to read out the symlink created to obtain the flag
+  ![image](https://github.com/user-attachments/assets/c6d7eaaf-76e3-4b49-a089-aab1046ff82c)  
+  Flag Obtained- **pwn.college{kYPsw_veWxQpD5WXhYi-_OFYlbs.dITM1UDLOYTN0czW}**
 
-  
 
 
 
