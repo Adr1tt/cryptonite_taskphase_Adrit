@@ -18,8 +18,14 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
   Flag Obtained- **pwn.college{4pUprBuyZySiuZVGu09TBbSo9LM.dRTM4QDL0YTN0czW}**
 ## Searching Manuals
 - Learnt about searching manuals by the use of "/", "n", "N" and "?".
-- Started the challenge
-- ![image](https://github.com/user-attachments/assets/9134043c-b612-4e58-acbc-202031e5201a)
+- Started the challenge and used `man challenge` to see the manual of the `challenge` command. Then I used `/` to search "flag" and used "n" to scroll down and found this-
+  ![image](https://github.com/user-attachments/assets/9134043c-b612-4e58-acbc-202031e5201a)  
+- Then I pressed "q" to to quit and then entered `/challenge/challenge --ce` to obtain the flag-  
+  <img width="586" alt="image" src="https://github.com/user-attachments/assets/fc8d5dd8-2f86-4ba0-8d06-9d2f09a7790e">  
+  Flag Obtained- **pwn.college{QX-JxzgkB080VnAAHpj73BV0LQW.dVTM4QDL0YTN0czW}**
+## Searching For Manuals
+
+  
 
 
   
