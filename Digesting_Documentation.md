@@ -1,4 +1,4 @@
-#Digesting Documentation
+# Digesting Documentation
 Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establish connection between the terminal and pwn.college  
 ## Learning From Documentation
 - Started the challenge and entered `/challenge/challenge --giveflag` into the terminal prompt to obtain the flag-
