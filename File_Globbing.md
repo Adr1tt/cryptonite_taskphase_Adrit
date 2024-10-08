@@ -14,7 +14,7 @@
   Flag Obtained- **pwn.college{MrVduNfyLPjUE3LsiNaAXeEtEmu.dJjM4QDL0YTN0czW}**
 ## Matching with []
 - Learnt that the square brackes are, essentially, a limited form of ?, in that instead of matching any character, [] is a wildcard for some subset of potential characters, specified within the brackets.
-- Started the challenge and used `cd /challenge/files` to change directories and then entered `/challenge/run file_[bash]` into the terminal prompt as instructed and obtained the flag-
+- Started the challenge and used `cd /challenge/files` to change directories and then entered `/challenge/run file_[bash]` into the terminal prompt as instructed and obtained the flag-  
   <img width="531" alt="image" src="https://github.com/user-attachments/assets/268d8ac4-7bf2-4936-961f-62f20f8687f6">  
   Flag Obtained- **pwn.college{Udx2p7ZsUb4kFC9-jhtzZ12kdmx.dNjM4QDL0YTN0czW}**
 ## Matching paths with []
@@ -31,7 +31,7 @@
 - Learnt that if the first character in the brackets([]) is "!" or "^" (in newer versions of bash), the glob inverts, and that bracket instance matches characters that aren't listed.
 - Also learnt that "!" has a different special meaning in bash when it's not the first character of a [] glob, but ^ does not have this problem, but is also not compatible with older shells.
 - Started the challenge and used `cd /challenge/files` to change directories.
-- Then, according to the given instructions in the challenge I used `/challenge/run [!pwn]*`, where [!pwn]* matches the files which don't start with p,w or n and thus obtained the flag-
+- Then, according to the given instructions in the challenge I used `/challenge/run [!pwn]*`, where [!pwn]* matches the files which don't start with p,w or n and thus obtained the flag-  
   <img width="551" alt="image" src="https://github.com/user-attachments/assets/b67b86b9-2b71-4032-ab07-2980aace33ad">  
   Flag Obtained- **pwn.college{IJ2ly4QrIrwz0rwOLYPw_NJxMVZ.dZjM4QDL0YTN0czW}**
 
