@@ -1,5 +1,5 @@
 # Comprehending Commands
-Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establish connection between the terminal and pwn.college
+Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to establish connection between the terminal and pwn.college
 ## cat: not the pet, but the command!
 - Learnt the `cat` command which is used for reading out files and it can concatenate multiple files if multiple arguments are provided.
 - Started the challenge and entered `cat flag` in the terminal prompt to read out the contents of the flag file, thus obtaining the flag
