@@ -47,7 +47,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 ## An Epic Filesystem Quest
 (This was a long one)
 - Started the challenge and as instructed I used `cd /` and then `ls` to list files in the "/" directory.
-- The following showed up in the terminal-
+- The following showed up in the terminal-  
   <img width="418" alt="image" src="https://github.com/user-attachments/assets/985dbda4-155a-4cd0-89fa-aa24778eaeef">  
 - So I used `cat INFO` to read out the contents of the file "INFO" and the following showed up in the terminal-
   <img width="1007" alt="image" src="https://github.com/user-attachments/assets/83b60382-ce19-4992-bdc8-3b4a588c96e7">  
