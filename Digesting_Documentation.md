@@ -1,5 +1,5 @@
 # Digesting Documentation
-Used the ssh -i ./key `hacker@dojo.pwn.college` command in the terminal to establish connection between the terminal and pwn.college  
+Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to establish connection between the terminal and pwn.college  
 ## Learning From Documentation
 - Started the challenge and entered `/challenge/challenge --giveflag` into the terminal prompt to obtain the flag-
   <img width="519" alt="image" src="https://github.com/user-attachments/assets/2b39f354-990e-42d8-8026-c179aa885c9e">  
