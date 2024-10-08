@@ -24,6 +24,18 @@ Used the ssh -i ./key hacker@dojo.pwn.college command in the terminal to establi
   <img width="586" alt="image" src="https://github.com/user-attachments/assets/fc8d5dd8-2f86-4ba0-8d06-9d2f09a7790e">  
   Flag Obtained- **pwn.college{QX-JxzgkB080VnAAHpj73BV0LQW.dVTM4QDL0YTN0czW}**
 ## Searching For Manuals
+- Understood the use of `man man`.
+- Started the challenge and entered `man man` into the terminal which outputted a large manual page and I pressed space which revealed more contents of the manual page.
+  <img width="990" alt="image" src="https://github.com/user-attachments/assets/55ecc563-1fc0-4819-bdd5-3b92dae6c445">  
+- After seeing the above command I pressed "q" and entered `man -k` into the terminal which was a wrong use of the `man` command, but then I entered `man -k flag` which told me about a command `wpreagveds` which prints the flag
+  <img width="1255" alt="image" src="https://github.com/user-attachments/assets/dafaff3e-29d9-44a4-bb33-3dcc4d88191e">  
+- Now, I entered `/challenge/challenge --wpreag 214` in the terminal to obtain the flag-  
+  <img width="603" alt="image" src="https://github.com/user-attachments/assets/a8911ece-0ac8-4c56-8806-9de149728242">  
+  Flag Obtained- **pwn.college{wRSBpKr_UBDLeU2AagvMeUds1fl.dZTM4QDL0YTN0czW}**
+## Helpful programs
+
+
+
 
   
 
