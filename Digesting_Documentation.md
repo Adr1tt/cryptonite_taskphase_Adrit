@@ -6,7 +6,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   FLag Obtained- **pwn.college{4IDjHTrm7koCX_4-9OcscuH7WsK.dRjM5QDL0YTN0czW}**
 ## Learning Complex Usage
 - Understood that many commands take complex arguements and some commands' arguements take arguements like `find`.
-- Started the challenge and entered `/challenge/challenge --printfile /flag` as I wanted to print the "flag" file and thus obtained the flag-
+- Started the challenge and entered `/challenge/challenge --printfile /flag` as I wanted to print the "flag" file and thus obtained the flag-  
   <img width="531" alt="image" src="https://github.com/user-attachments/assets/0b1a0270-a4ea-475c-afde-b332cbaabb73">  
   Flag Obtained- **pwn.college{wT-5N0L4-J4ksuODLYwWU72_cEY.dVjM5QDL0YTN0czW}**
 ## Reading Manuals
@@ -34,16 +34,16 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   Flag Obtained- **pwn.college{wRSBpKr_UBDLeU2AagvMeUds1fl.dZTM4QDL0YTN0czW}**
 ## Helpful programs
 - Learnt that some programs don't have a man page, but arguments like --help or -h and in rare cases, -?, help, /? might tell us how to run the command/program.
-- Started the challenge and used `/challenge/challenge --help` which told me how to use the command along with other arguements-
+- Started the challenge and used `/challenge/challenge --help` which told me how to use the command along with other arguements-  
   <img width="638" alt="image" src="https://github.com/user-attachments/assets/5fbfacbb-610d-4aee-b4ce-7f9428eaace4">  
-- Then I used `/challenge/challenge -p` to find the secret value which was 984 and then I obtained the flag using `/challenge/challenge -g 984`-
+- Then I used `/challenge/challenge -p` to find the secret value which was 984 and then I obtained the flag using `/challenge/challenge -g 984`-  
   <img width="588" alt="image" src="https://github.com/user-attachments/assets/fae40a35-778a-40f7-b21a-ae67ff079665">  
   Flag Obtained- **pwn.college{IGdutnV9awtUuKjcgKS8tLM_K_T.ddjM4QDL0YTN0czW}**
 ## Help for Builtins
 - Learnt that we can get a list of shell builtins by using `help` and we can also get help on a specific builtin by passing it as an arguement.
-- Started the challenge and used `help challenge` to understand the use of the builtin called "challenge"
+- Started the challenge and used `help challenge` to understand the use of the builtin called "challenge"  
   <img width="531" alt="image" src="https://github.com/user-attachments/assets/884a282a-79ef-404f-be8d-9afb1fd68372">  
-- Then I used `challenge --secret ImRWlHgK` to obtain the flag-
+- Then I used `challenge --secret ImRWlHgK` to obtain the flag-  
   <img width="426" alt="image" src="https://github.com/user-attachments/assets/74cdefa6-785a-4101-8aa3-ed74c3961d92">  
   Flag obtained- **pwn.college{ImRWlHgKPlA89zI8nZZVcaoncT_.dRTM5QDL0YTN0czW}**
 
