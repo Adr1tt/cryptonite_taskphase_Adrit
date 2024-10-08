@@ -9,7 +9,7 @@
   Flag Obtained- **pwn.college{gtvLvuKjwaBDy9WfJ05RpJMuLs4.dFjM4QDL0YTN0czW}**
 ## Matching with ?
 - Learnt that when the shell encounters a "?" character in any argument, the shell will treat it as single-character wildcard.
-- Started the challenge and used `cd /?ha??enge` to change my cwd to the "challenge" directory and used `/challenge/run` to obtain the flag-
+- Started the challenge and used `cd /?ha??enge` to change my cwd to the "challenge" directory and used `/challenge/run` to obtain the flag-  
   <img width="554" alt="image" src="https://github.com/user-attachments/assets/ebcadf2c-aed8-4be3-ad72-0cb350c24862">  
   Flag Obtained- **pwn.college{MrVduNfyLPjUE3LsiNaAXeEtEmu.dJjM4QDL0YTN0czW}**
 ## Matching with []
