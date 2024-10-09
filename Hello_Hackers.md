@@ -6,10 +6,9 @@
 
 
 ## Intro to Commands
-- Learnt the `whoami` command and used it in the terminal which printed out my username(adrit)  
-  <img width="304" alt="image" src="https://github.com/user-attachments/assets/dec9d53e-767d-41bc-897c-d6b6fcc767ad">
+- Learnt the `whoami` command which prints out the username of the user.
 - Started the challenge and used the `hello` command to get the flag.  
-  <img width="587" alt="image" src="https://github.com/user-attachments/assets/edea7464-fbc7-48b8-ba1c-1fe6638e192b">  
+  <img width="404" alt="image" src="https://github.com/user-attachments/assets/7cf6f527-7717-4131-b4e7-057a1c8923bb">  
   Flag Obtained- **pwn.college{Yrmv4hnlSQeAUOHnS6YpMH_cPQ8.ddjNyUDL0YTN0czW}**
   
 ## Intro to Arguements  
