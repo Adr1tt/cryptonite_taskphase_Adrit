@@ -51,7 +51,8 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   <img width="418" alt="image" src="https://github.com/user-attachments/assets/985dbda4-155a-4cd0-89fa-aa24778eaeef">  
 - So I used `cat INFO` to read out the contents of the file "INFO" and the following showed up in the terminal-
   <img width="1007" alt="image" src="https://github.com/user-attachments/assets/83b60382-ce19-4992-bdc8-3b4a588c96e7">  
-- So then I entered `ls /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1` in the terminal and 2 files were showed and one of them was "README-TRAPPED" so then, I used `cat /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1/README-TRAPPED` to reveal it's contents and this showed up-
+- So then I entered `ls /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1` in the terminal and 2 files were showed and one of them was "README-TRAPPED" so then, I used
+`cat /usr/share/javascript/mathjax/unpacked/jax/output/HTML-CSS/fonts/Gyre-Termes/Size1/README-TRAPPED` to reveal it's contents and this showed up-
   <img width="1020" alt="image" src="https://github.com/user-attachments/assets/323ef400-9f49-48df-b2ed-5566e70b3f36">  
 - Then I used `ls /usr/share/autoconf/autotest -a` to reveal the hidden files and a file named ".TIP" came up. Then, I used `cat /usr/share/autoconf/autotest/.TIP` which revealed the next clue
   <img width="578" alt="image" src="https://github.com/user-attachments/assets/b9336c31-e644-4355-9da0-b03b4aae8fb0">  
