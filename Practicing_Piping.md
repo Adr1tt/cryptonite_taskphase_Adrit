@@ -1,4 +1,4 @@
-<img width="858" alt="image" src="https://github.com/user-attachments/assets/bfbc7e78-4354-4e70-a093-038c8be79c15"><img width="854" alt="image" src="https://github.com/user-attachments/assets/793ccffb-178b-42a8-9665-d77338595eda"># Practicing Piping
+# Practicing Piping
 Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to establish connection between the terminal and pwn.college
 ## Redirecting output
 - Learnt that we can redirect output to files by using ">".
@@ -14,7 +14,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 - Started the challenge and as per the instructions given in the challenge description I used `/challenge/run >> /home/hacker/the-flag` for appending the second part of the flag and then used `cat /home/hacker/the-flag` to obtain the flag-  
   <img width="854" alt="image" src="https://github.com/user-attachments/assets/fe11a404-69df-4515-9a6a-92d99aef06c6">  
   Flag Obtained- **pwn.college{8X_X7ZlhreqaxSoKnBu-tIq50BI.ddDM5QDL0YTN0czW}**
-## Redirecting erros
+## Redirecting errors
 - Learnt about File Descriptor(FD) which is a number the describes a communication channel in Linux.
   - FD 0: Standard Input
   - FD 1: Standard Output
@@ -31,7 +31,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   <img width="542" alt="image" src="https://github.com/user-attachments/assets/71baee87-06ec-426c-9a0c-a5449a579fe1">  
   Flag Obtained- **pwn.college{wbRE01797eZxXQIIWEU1_1eTzVc.dBzN1QDL0YTN0czW}**
 ## Grepping stored results
-- Started the challenge and used `` to redirect of /challenge/run to /tmp/data.txt.  
+- Started the challenge and used `/challenge/run > /tmp/data.txt` to redirect output of /challenge/run to /tmp/data.txt.  
   <img width="858" alt="image" src="https://github.com/user-attachments/assets/b50535b7-5044-4c04-b1eb-79ab6fd6b9f7">  
 - Then I used `grep pwn /tmp/data.txt` and thus obtained the flag-  
   ![image](https://github.com/user-attachments/assets/c66d0148-4382-4e38-9a3b-490da2db6493)  
@@ -54,7 +54,18 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   <img width="723" alt="image" src="https://github.com/user-attachments/assets/983bcd11-e6d0-4014-9bf6-fe6e3c927f36">  
   Flag Obtained- **pwn.college{IK2acYy1TaPmRNDZkbT-wV8jGAY.dFjM5QDL0YTN0czW}**
 ## Writing to multiple programs
-- 
+- Learnt the concept of "Process Substitution" and "Named pipes".
+- Started the challenge and used `/challenge/hack | tee >(/challenge/the) >(/challenge/planet)` which runs the /challenge/hack command, and duplicates its output as input to both the /challenge/the and the /challenge/planet commands and thus I obtained the flag-  
+  <img width="749" alt="image" src="https://github.com/user-attachments/assets/18c5d1c0-10c2-4698-b7b5-d89becaaa03a">  
+  Flag Obtained- **pwn.college{87J5WfdBVXJ6A3F2CpxNNE_2w6n.dBDO0UDL0YTN0czW}**  
+**References-**
+  *https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html*
+## Split-piping stderr and stdout
+- Started the challenge, and at first I used `/challenge/hack | tee 2> >(/challenge/the) 1> >(/challenge/planet)` which was wrong as it wasn't redirecting the stderr and stdout properly. Then, I entered `/challenge/hack 2> >(/challenge/the) 1> >(/challenge/planet)` into the terminal prompt which gave me the flag-  
+  ![image](https://github.com/user-attachments/assets/87b5b583-538f-40e3-a2c2-d33bba89a8e4)  
+  Flag Obtained- **pwn.college{gBRtgYEUI2azhsSSF6D6m9lLrPo.dFDNwYDL0YTN0czW}**
+
+
 
 
 
