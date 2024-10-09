@@ -3,17 +3,15 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 
 ## The Root
 - Understood the concept of tree filesystem(starting at /) and directories.
-- Started the challenge and entered `/pwn` in the terminal prompt to get the flag
-  
+- Started the challenge and entered `/pwn` in the terminal prompt to get the flag  
+  ![image](https://github.com/user-attachments/assets/b2d4d97b-bae9-44b0-bdd5-389b5cacc9f8)  
   Flag Obtained- **pwn.college{oZPKIsYpmmn_gh0a3mq58cE2U_V.dhzN5QDL0YTN0czW}**
-  ![image](https://github.com/user-attachments/assets/b2d4d97b-bae9-44b0-bdd5-389b5cacc9f8)
 
 ## Program and absolute paths
 - In this challenge we had to execute the **run** file which is said to be in the **challenge** directory which is in the root dictonary(/)
-- Started the challenge and entered `/challenge/run` in the terminal prompt to get the flag
-
+- Started the challenge and entered `/challenge/run` in the terminal prompt to get the flag  
+  ![image](https://github.com/user-attachments/assets/002d2136-c741-43b3-ba6d-f8087b1c109f)  
   Flag Obtained- **pwn.college{AjBIcf8QMReH_phm7wKT7vO4eO_.dVDN1QDL0YTN0czW}**
-  ![image](https://github.com/user-attachments/assets/002d2136-c741-43b3-ba6d-f8087b1c109f)
 ## Position thy self
 - Understood that we can navigate around directories by using the cd (change directory) command and passing a path to it as an argument.
 - Started the challenge and used `/challenge/run` and the following output is shown in the terminal-
@@ -32,10 +30,8 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 ## Position yet elsewhere
 - Started the challenge and used `/challenge/run` to the following output is shown in the terminal-
   <img width="448" alt="image" src="https://github.com/user-attachments/assets/18b79dbd-414a-4325-b7d2-7175909dce7b">
-
-
 - Entered `cd /etc/apt/sources.list.d` in the terminal prompt to change the directory and used `/challenge/run` to obtain the flag
-  <img width="529" alt="image" src="https://github.com/user-attachments/assets/0fc1c806-86dd-4524-bb20-72454b393f1e">
+  <img width="529" alt="image" src="https://github.com/user-attachments/assets/0fc1c806-86dd-4524-bb20-72454b393f1e">  
   Flag Obtained- **pwn.college{Qp84riXpWI153BGSJOsIxGX0AgD.dhDN1QDL0YTN0czW}**
 ## Implicit relative paths, from /
 - Understood the concept of relative paths and cwd(current working directory).
