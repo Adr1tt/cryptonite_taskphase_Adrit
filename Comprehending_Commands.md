@@ -84,7 +84,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   Flag Obtained- **pwn.college{k6oT2sD3qBzMyDGnvoTL4PKhuoo.dJzM4QDL0YTN0czW}**
 ## linking files
 - Understood the concept of a hard link and a soft link(symlink or symbolic link).
-- Learnt the `ls` command and use of `ls -s`. Also I learnt about the `file` command which tells the type of a file.
+- Learnt the `ln` command and use of `ln -s`. Also I learnt about the `file` command which tells the type of a file.
 - Started the challenge and entered `ln -s /flag /home/hacker/not-the-flag` in the terminal to create a symlink and then used `/challenge/catflag` to read out the symlink created to obtain the flag
   ![image](https://github.com/user-attachments/assets/c6d7eaaf-76e3-4b49-a089-aab1046ff82c)  
   Flag Obtained- **pwn.college{kYPsw_veWxQpD5WXhYi-_OFYlbs.dITM1UDLOYTN0czW}**
