@@ -27,5 +27,23 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   <img width="569" alt="image" src="https://github.com/user-attachments/assets/f9335b08-77a8-4fec-bd97-6e722204b574">  
   Flag Obtained- **pwn.college{ITcGgFpR03HcQDF2ty0qCD5Ff7i.dhTN1QDL0YTN0czW}**
 ## Storing Command Output
+- Learnt about command substitution using $().
+- Started the challenge and used `PWN=$(/challenge/run)` to store the flag in the variable "PWN" and then used `echo $PWN` to obtain the flag-  
+  <img width="560" alt="image" src="https://github.com/user-attachments/assets/abdafa17-d9fc-4adb-98aa-c9529f89f460">  
+  Flag Obtained- **pwn.college{48kUjayRkQt-2p8HLeBA1n5uWok.dVzN0UDL0YTN0czW}**
+- Resources- https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html
+## Reading Input
+- Learnt the `read` command which is used for taking user input and the -p arguement for prompts.
+- Started the challenge and used `read PWN` and entered "COLLEGE" into the terminal prompt to obtain the flag-  
+  <img width="484" alt="image" src="https://github.com/user-attachments/assets/b6c11a55-93c4-4662-b03f-1a742c9a43b8">  
+  Flag Obtained- **pwn.college{4Wc4-YA-sTcN1LxbQkC5TeyWgID.dhzN1QDL0YTN0czW}**
+## Reading files
+- Learnt how to read a file into an environment variable.
+- Started the challenge and used `read PWN < /challenge/read_me` to read "/challenge/read_me" into the "PWN" environment variable and thus obtained the flag-  
+  <img width="484" alt="image" src="https://github.com/user-attachments/assets/449595ce-daec-4e6f-97d0-f306dc0d805f">  
+  Flag Obtained- **pwn.college{YU1mcK16fDve6YrV3J_3mCGTFe2.dBjM4QDL0YTN0czW}**
+
+
+
 
 
