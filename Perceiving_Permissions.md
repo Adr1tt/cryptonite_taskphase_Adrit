@@ -27,7 +27,7 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
   <img width="452" alt="image" src="https://github.com/user-attachments/assets/d15faa2c-3d5d-4370-b944-94963df1c578">  
   Flag Obtained- **pwn.college{w7SJu4j6k3oep4ZsA2yc1x8ZnsM.dJzNyUDL0YTN0czW}**
 ## Changing Permissions
-- 
+- Learnt the `chmod` command and also learnt that `chmod` allows us to tweak permissions with the mode format of WHO+/-WHAT, where WHO is user/group/other and WHAT is read/write/execute. "+" adds a permission and "-" removes a permission.
 
 
 
