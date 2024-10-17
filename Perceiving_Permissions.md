@@ -18,6 +18,17 @@ Used the `ssh -i ./key hacker@dojo.pwn.college` command in the terminal to estab
 ## Groups and Files
 - Learnt that files have both an owning user and group. A group can have multiple users in it, and a user can be a member of multiple groups.
 - Understood the `id ` command which can be used to see what groups the user is a part of.
+- Learnt the `chgrp` command which is used to change the group ownership of a file or directory.
+- Started the challenge and used `chgrp hacker /flag` and then used `cat /flag` to obtain the flag-  
+  <img width="411" alt="image" src="https://github.com/user-attachments/assets/6a2c9a3b-d918-4dbb-b837-7184a525af10">  
+  Flag Obtained- **pwn.college{kWHjSg3cBzYPNlUsRGn5Uzo1LBY.dFzNyUDL0YTN0czW}**
+## Fun With Groups Names
+- Started the challenge and used the `id` command which gave me the name of the group and then I used the `chgrp` command and obtained the flag using `cat`-  
+  <img width="452" alt="image" src="https://github.com/user-attachments/assets/d15faa2c-3d5d-4370-b944-94963df1c578">  
+  Flag Obtained- **pwn.college{w7SJu4j6k3oep4ZsA2yc1x8ZnsM.dJzNyUDL0YTN0czW}**
+## Changing Permissions
 - 
+
+
 
 
