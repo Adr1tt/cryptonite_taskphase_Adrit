@@ -1060,7 +1060,6 @@ bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 ### References
 - https://en.wikipedia.org/wiki/Setuid
-- https://www.tutorialspoint.com/setuid-setgid-and-sticky-bits-in-linux-file-permissions
 # Level 20 → Level 21
 - Used `ssh bandit20@bandit.labs.overthewire.org -p 2220` to log into bandit20 and used the password obtained in the previous level.
 - Opened another terminal window and logged in as bandit20.
