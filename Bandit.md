@@ -924,6 +924,10 @@ bandit17@bandit:~$ diff passwords.old passwords.new
 ---
 > x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 ```
+### References
+- https://www.geeksforgeeks.org/diff-command-linux-examples/
+- https://youtu.be/hY6pthfoNjw?si=CwnsTyhrJA0whkF8
+- man page of ssh
 # Level 18 → Level 19
 - I used `ssh bandit18@bandit.labs.overthewire.org -p 2220` to log into bandit18 and used the password obtained in the previous level but it didn't work.
 - Then I used `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"` to directly get the password.
