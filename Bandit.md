@@ -455,6 +455,7 @@ The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 - https://www.geeksforgeeks.org/gunzip-command-in-linux-with-examples/
 - https://www.geeksforgeeks.org/tar-command-linux-examples/
 - https://stackoverflow.com/questions/43724144/hexdump-reverse-command
+- https://blog.online-convert.com/what-are-tar-gz-and-bz2/
 # Level 13 → Level 14
 - Used `ssh bandit13@bandit.labs.overthewire.org -p 2220` to log into bandit13 and used the password obtained in the previous level, which outputted this:
   ```bash
