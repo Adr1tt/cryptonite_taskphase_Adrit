@@ -332,6 +332,9 @@ millionth	dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 sort data.txt | uniq -u
 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ```
+### References
+- https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
+- https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/
 # Level 9 → Level 10
 - Used `ssh bandit9@bandit.labs.overthewire.org -p 2220` to log into bandit9 and used the password obtained in the previous level.
 - Used `strings data.txt | grep '=' | sort`, where the `strings` command is used to extract human-readable text (printable ASCII and Unicode strings) from binary or non-text files.
@@ -357,6 +360,8 @@ qC(=
 zA=?0j
 zP=
 ```
+### References
+- https://www.javatpoint.com/linux-strings-command
 # Level 10 → Level 11
 - Used `ssh bandit10@bandit.labs.overthewire.org -p 2220` to log into bandit10 and used the password obtained in the previous level.
 - Used `base64 -d data.txt` to decode the base 64 encoded data in "data.txt" and thus obtained the password.
