@@ -1053,8 +1053,125 @@ bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
 - https://www.tutorialspoint.com/setuid-setgid-and-sticky-bits-in-linux-file-permissions
 # Level 20 → Level 21
 - Used `ssh bandit20@bandit.labs.overthewire.org -p 2220` to log into bandit20 and used the password obtained in the previous level.
-- Opened another terminal window and logged in as bandit20
-- 
+- Opened another terminal window and logged in as bandit20.
+- Used `cat /etc/bandit_pass/bandit20` which gave me the password obtained previously. Then I used `nc -lvp 9630 < /etc/bandit_pass/bandit20` for listening on a random port "9630"
+- Then in the other terminal I used `./suconnect 9630` and obtained the password.
+### Terminal 1
+```bash
+bandit20@bandit:~$ ls
+suconnect
+bandit20@bandit:~$ ./suconnect
+Usage: ./suconnect <portnumber>
+This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.
+bandit20@bandit:~$ ./suconnect 9630
+Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Password matches, sending next password
+```
+### Terminal 2
+```bash
+bandit20@bandit:~$ cat /etc/bandit_pass/bandit20
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+bandit20@bandit:~$ nc -lvp 9630 < /etc/bandit_pass/bandit20
+Listening on 0.0.0.0 9630
+Connection received on localhost 49912
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+```
+### References
+- https://superuser.com/questions/1533731/use-netcat-to-listen-on-a-port-and-send-output-from-a-command-when-a-client-conn
+- https://stackoverflow.com/questions/51775230/what-does-connecting-to-own-network-daemon-mean
+- man page of `nc` command
+# Level 21 → Level 22
+- Used `ssh bandit21@bandit.labs.overthewire.org -p 2220` to log into bandit21 and used the password obtained in the previous level.
+- Used `ls /etc/cron.d/` , `ls -a /etc/cron.d/` and `ls -l /etc/cron.d/` and found a process called "cronjob_bandit22" running.
+- I used `cd /etc/cron.d/` to change directories and used `cat cronjob_bandit22` which told me about "/usr/bin/cronjob_bandit22.sh".
+- Then I entered `cronjob_bandit22.sh` into the terminal prompt which did not work.
+- After that I used `cd ~` and `cat /etc/cron.d/cronjob_bandit22` again which gave the same output.
+- Now, I used `cat /usr/bin/cronjob_bandit22.sh`. The output indicated that the password might be in "/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv"
+- Then I used `cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv` to obtain the password.
+
+### Terminal
+```bash
+bandit21@bandit:~$ ls /etc/cron.d/
+cronjob_bandit22  cronjob_bandit24  otw-tmp-dir
+cronjob_bandit23  e2scrub_all       sysstat
+bandit21@bandit:~$ ls -a /etc/cron.d/
+.   cronjob_bandit22  cronjob_bandit24  otw-tmp-dir   sysstat
+..  cronjob_bandit23  e2scrub_all       .placeholder
+bandit21@bandit:~$ ls -l /etc/cron.d/
+total 24
+-rw-r--r-- 1 root root 120 Sep 19 07:08 cronjob_bandit22
+-rw-r--r-- 1 root root 122 Sep 19 07:08 cronjob_bandit23
+-rw-r--r-- 1 root root 120 Sep 19 07:08 cronjob_bandit24
+-rw-r--r-- 1 root root 201 Apr  8  2024 e2scrub_all
+-rwx------ 1 root root  52 Sep 19 07:10 otw-tmp-dir
+-rw-r--r-- 1 root root 396 Jan  9  2024 sysstat
+bandit21@bandit:~$  cd /etc/cron.d/
+bandit21@bandit:/etc/cron.d$ cat cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+bandit21@bandit:/etc/cron.d$ cronjob_bandit22.sh
+chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
+/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
+bandit21@bandit:/etc/cron.d$ cd ~
+bandit21@bandit:~$ cat /etc/cron.d/cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+bandit21@bandit:~$ cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+```
+#  Level 22 → Level 23
+- Used `ssh bandit23@bandit.labs.overthewire.org -p 2220` to log into bandit22 and used the password obtained in the previous level.
+- Used `ls -l /etc/cron.d` and just like the last level I used `cat /etc/cron.d/cronjob_bandit23` and then `cat /usr/bin/cronjob_bandit23.sh`, which told me what to do in order to get the password.
+- I tried following the exact steps by using `myname=$(whoami)` , `mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)` and `cat /etc/bandit_pass/$myname > /tmp/$mytarget`.
+- Then I used `echo $mytarget` and and used that value to get the file in "/tmp" by using `cat /tmp/8169b67bd894ddbb4412f91573b38db3`, but the password was the same as the previous level and I tried logging into bandit23 using this password but it was incorrect.
+- I understood my mistake, the `whoami` command set the variable "myname" to bandit22 but I needed it to be bandit 23.
+- Therefore, I used `mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)` and then tried `cat /etc/bandit_pass/bandit23 > /tmp/$mytarget` but the "Permission denied" message showed up.
+- Then I used `echo "I am user bandit23" | md5sum | cut -d ' ' -f 1` which gave me the file name in "/tmp" storing the password. Then I used `cat /tmp/8ca319486bfbbc3663ea0fbe81326349` to finally obtain the password.
+
+### Terminal
+```bash
+
+bandit22@bandit:~$ ls -l /etc/cron.d
+total 24
+-rw-r--r-- 1 root root 120 Sep 19 07:08 cronjob_bandit22
+-rw-r--r-- 1 root root 122 Sep 19 07:08 cronjob_bandit23
+-rw-r--r-- 1 root root 120 Sep 19 07:08 cronjob_bandit24
+-rw-r--r-- 1 root root 201 Apr  8  2024 e2scrub_all
+-rwx------ 1 root root  52 Sep 19 07:10 otw-tmp-dir
+-rw-r--r-- 1 root root 396 Jan  9  2024 sysstat
+bandit22@bandit:~$ cat /etc/cron.d/cronjob_bandit23
+@reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+bandit22@bandit:~$ cat /usr/bin/cronjob_bandit23.sh
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+bandit22@bandit:~$ myname=$(whoami)
+bandit22@bandit:~$ mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+bandit22@bandit:~$ cat /etc/bandit_pass/$myname > /tmp/$mytarget
+bandit22@bandit:~$ echo $mytarget
+8169b67bd894ddbb4412f91573b38db3
+bandit22@bandit:~$ cat /tmp/8169b67bd894ddbb4412f91573b38db3
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+bandit22@bandit:~$ mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+bandit22@bandit:~$ cat /etc/bandit_pass/bandit23 > /tmp/$mytarget
+-bash: /tmp/8ca319486bfbbc3663ea0fbe81326349: Permission denied
+bandit22@bandit:~$ echo "I am user bandit23" | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+```
+
+
 
 
 
